@@ -1,0 +1,51 @@
+.page{
+    height: 100vh;
+    background-color: #adb5bd;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+    grid-column: 3/11;
+    grid-row: 2;
+    font-size: 3rem;
+}
+
+.form{
+    grid-column: 4/10;
+    grid-row: 4/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    &__inputBar{
+        width: 100%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding-left: 1em;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+    }
+}
+
+.response{
+    grid-column: 4/10;
+    grid-row: 7/-1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.loadingContainer{
+    grid-column: 4/10;
+    grid-row: 7/-1;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
