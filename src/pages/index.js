@@ -16,7 +16,7 @@ function Home() {
     setLoading(true)
     setResult('')
     setTextData('')
-    const response = await axios.post('http://localhost:8000/api/example', textData)
+    const response = await axios.post('https://react-laravel-open-ai-backend.herokuapp.com/api/example', textData)
     setResult(response.data)
     setLoading(false)
   }
