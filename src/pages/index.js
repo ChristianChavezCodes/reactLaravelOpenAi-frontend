@@ -35,7 +35,7 @@ function Home() {
   return(
     <div className = {styles.page}>
       <h1 className={styles.header}>
-        Welcome to your personal organic chemistry tutor! Please feel free to ask anything!
+        Welcome to your personal Know-it-all! Please feel free to ask anything!
       </h1>
       <form className = {styles.form} ref = {formRef} onSubmit = {handleChat}>
         <input className = {styles.form__inputBar} type = 'text' value = {textData} onChange = {handleChange} />
